@@ -1,0 +1,13 @@
+Como Aristóteles não ficou em primeiro em Química, ele deve ter ficado em primeiro lugar em Física ou Matemática.
+Sócrates perdeu para Platão em Física, o que significa que Sócrates deve ter ficado em segundo lugar em Física e Platão em primeiro lugar.
+Platão acertou mais que Aristóteles em Matemática, então Platão ficou em primeiro lugar em Matemática e Aristóteles em segundo lugar.
+A partir disso, podemos concluir que:
+
+Em Física: Platão ficou em primeiro lugar, Sócrates em segundo lugar e Aristóteles em terceiro lugar.
+Em Matemática: Platão ficou em primeiro lugar, Aristóteles em segundo lugar e Sócrates em terceiro lugar.
+Em Química: Resta apenas Aristóteles para o primeiro lugar, Sócrates em segundo lugar e Platão em terceiro lugar.
+Portanto, a classificação final é:
+
+Física: 1º Platão, 2º Sócrates, 3º Aristóteles.
+Matemática: 1º Platão, 2º Aristóteles, 3º Sócrates.
+Química: 1º Aristóteles, 2º Sócrates, 3º Platão.
