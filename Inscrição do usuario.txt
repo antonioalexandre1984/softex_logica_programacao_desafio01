@@ -1,0 +1,21 @@
+1 - Proposta das variáveis:
+Nesse algoritmo, serão utilizadas variáveis para armazenar as informações fornecidas pelo usuário. Serão necessárias variáveis para armazenar o nome, o CPF, o RG, a altura e o endereço.
+
+2 - Declaração das variáveis:
+Podemos declarar as variáveis no início do algoritmo, utilizando os tipos de dados adequados para cada informação. Por exemplo:
+// declaração das variáveis
+string nome;
+string cpf;
+string rg;
+float altura;
+string endereco;
+
+
+Comando de atribuição:
+Para atribuir os valores fornecidos pelo usuário às variáveis correspondentes, podemos utilizar o comando de atribuição =. Por exemplo:
+// atribuição dos valores informados pelo usuário
+nome = "José Almeida da Silva";
+cpf = "12345678900";
+rg = "9517530";
+altura = 1.78;
+endereco = "Rua A, 380 – Centro – Recife/PE";
