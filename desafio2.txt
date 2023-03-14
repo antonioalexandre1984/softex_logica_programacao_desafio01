@@ -1,0 +1,11 @@
+Para descobrir qual aluno trocou de lugar e qual a disciplina de cada um, podemos utilizar a seguinte estratégia:
+
+Analisar as mudanças entre as ilustrações 1 e 2 para determinar quais alunos novos foram alocados em cada grupo (P ou M).
+Entre as ilustrações 1 e 2, podemos ver que 6 novos alunos foram adicionados ao grupo de Português (P) e 5 novos alunos foram adicionados ao grupo de Matemática (M).
+Analisar as mudanças entre as ilustrações 2 e 3 para identificar quais alunos trocaram de lugar.
+Entre as ilustrações 2 e 3, podemos ver que um aluno do grupo de Português (P) sentou na cadeira de um aluno do grupo de Matemática (M).
+Combinar as informações obtidas nas etapas 1 e 2 para determinar qual aluno trocou de lugar e qual a disciplina de cada um.
+Como sabemos que 6 alunos novos foram adicionados ao grupo de Português (P), podemos deduzir que o aluno que trocou de lugar é um desses 6 novos alunos.
+Como sabemos que um aluno do grupo de Português (P) sentou na cadeira de um aluno do grupo de Matemática (M), podemos deduzir que o aluno do grupo de Matemática (M) que foi trocado é um dos 5 novos alunos adicionados a esse grupo.
+Portanto, o aluno que trocou de lugar é um dos 6 novos alunos que gostam de Português (P) e o aluno cuja cadeira foi ocupada é um dos 5 novos alunos que gostam de Matemática (M).
+Dessa forma, o professor descobriria que um dos novos alunos que gosta de Português (P) trocou de lugar com um dos novos alunos que gosta de Matemática (M), mas não seria possível determinar exatamente quais alunos foram envolvidos na troca de lugar.
