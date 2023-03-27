@@ -1,0 +1,49 @@
+algoritmo cadastro
+
+var
+    nome: caractere
+    endereco: caractere
+    cidade: caractere
+    cpf: caractere
+    rg: caractere
+    idade: inteiro
+    nome_pai: caractere
+    nome_mae: caractere
+    peso, renda_bruta: real
+
+inicio
+    // Solicita ao usuário os dados para o cadastro
+    escreva("Digite seu nome: ")
+    leia(nome)
+    escreva("Digite seu endereço: ")
+    leia(endereco)
+    escreva("Digite sua cidade: ")
+    leia(cidade)
+    escreva("Digite seu CPF: ")
+    leia(cpf)
+    escreva("Digite seu RG: ")
+    leia(rg)
+    escreva("Digite sua idade: ")
+    leia(idade)
+    escreva("Digite o nome do seu pai: ")
+    leia(nome_pai)
+    escreva("Digite o nome da sua mãe: ")
+    leia(nome_mae)
+    escreva("Digite seu peso: ")
+    leia(peso)
+    escreva("Digite sua renda bruta: ")
+    leia(renda_bruta)
+
+    // Apresenta as informações cadastradas
+    escreva("Cadastro realizado com sucesso!")
+    escreva("Nome: ", nome)
+    escreva("Endereço: ", endereco)
+    escreva("Cidade: ", cidade)
+    escreva("CPF: ", cpf)
+    escreva("RG: ", rg)
+    escreva("Idade: ", idade)
+    escreva("Nome do pai: ", nome_pai)
+    escreva("Nome da mãe: ", nome_mae)
+    escreva("Peso: ", peso, "kg")
+    escreva("Renda bruta: R$", renda_bruta)
+fim_algoritmo
