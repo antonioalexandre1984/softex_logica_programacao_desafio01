@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+  int tamanho = 22;
+  int **vetor = (int **)malloc(tamanho * sizeof(int *));
+  
+  if (vetor == NULL) {
+    printf("Erro ao alocar memoria\n");
+    return 1;
+  }
+  
+  for (int i = 0; i < tamanho; i++) {
+    vetor[i] = (int *)malloc(sizeof(int));
+    if (vetor[i] == NULL) {
+      printf("Erro ao alocar memoria\n");
+      return 1;
+    }
+    *vetor[i] = i + 1;
+    printf("Valor na posicao %d: %d\n", i, *vetor[i]);
+  }
+  
+  vetor = (int **)realloc(vetor, (tamanho + 10) * sizeof(int *));
+  
+  if (vetor == NULL) {
+    printf("Erro ao realocar memoria\n");
+    return 1;
+  }
+  
+  for (int i = tamanho; i < tamanho + 10; i++) {
+    vetor[i] = (int *)malloc(sizeof(int));
+    if (vetor[i] == NULL) {
+      printf("Erro ao alocar memoria\n");
+      return 1;
+    }
+    *vetor[i] = i + 1;
+    printf("Valor na posicao %d: %d\n", i, *vetor[i]);
+  }
+  
+  for (int i = 0; i < tamanho + 10; i++) {
+    free(vetor[i]);
+  }
+  
+  free(vetor);
+  
+  return 0;
+}

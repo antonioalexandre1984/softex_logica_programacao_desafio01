@@ -1,0 +1,44 @@
+class Complexo:
+    def __init__(self, real, img):
+        self.real = real
+        self.img = img
+
+    def __str__(self):
+        return str(self.real) + " + " + str(self.img) + "i"
+
+    def soma(self, outro):
+        real = self.real + outro.real
+        img = self.img + outro.img
+        return Complexo(real, img)
+
+    def subtracao(self, outro):
+        real = self.real - outro.real
+        img = self.img - outro.img
+        return Complexo(real, img)
+
+    def multiplicacao(self, outro):
+        real = (self.real * outro.real) - (self.img * outro.img)
+        img = (self.real * outro.img) + (self.img * outro.real)
+        return Complexo(real, img)
+
+    def divisao(self, outro):
+        divisor = outro.real**2 + outro.img**2
+        real = ((self.real * outro.real) + (self.img * outro.img)) / divisor
+        img = ((self.img * outro.real) - (self.real * outro.img)) / divisor
+        return Complexo(real, img)
+
+# Teste das operações
+c1 = Complexo(3, 4)
+c2 = Complexo(5, 2)
+c3 = Complexo(-2, 6)
+
+# Imprime as propriedades real e img dos números complexos
+print("Complexo 1: ", c1.real, "+", c1.img, "i")
+print("Complexo 2: ", c2.real, "+", c2.img, "i")
+print("Complexo 3: ", c3.real, "+", c3.img, "i")
+
+# Teste das operações básicas
+print("Soma c1 + c2:", c1.soma(c2))
+print("Subtração c1 - c2:", c1.subtracao(c2))
+print("Multiplicação c1 * c2:", c1.multiplicacao(c2))
+print("Divisão c1 / c2:", c1.divisao(c2))
