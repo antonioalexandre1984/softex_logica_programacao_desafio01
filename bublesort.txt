@@ -1,0 +1,36 @@
+Algoritmo Bubble Sort em Portugol:
+
+Início do algoritmo
+
+Declaração do vetor com tamanho 10:
+vetor[10]
+
+Atribuição dos valores ao vetor em ordem crescente:
+vetor[0] <- 1
+vetor[1] <- 2
+vetor[2] <- 3
+vetor[3] <- 4
+vetor[4] <- 5
+vetor[5] <- 6
+vetor[6] <- 7
+vetor[7] <- 8
+vetor[8] <- 9
+vetor[9] <- 10
+
+Variáveis de controle:
+troca <- verdadeiro
+i <- 0
+
+Repetir enquanto houver troca:
+5.1. troca <- falso
+5.2. Repetir para j de 0 até 8-i:
+5.2.1. Se vetor[j] > vetor[j+1], então:
+5.2.1.1. Trocar vetor[j] com vetor[j+1]
+5.2.1.2. troca <- verdadeiro
+5.3. i <- i+1
+
+Exibir o vetor ordenado:
+Para k de 0 até 9:
+Escrever(vetor[k])
+
+Fim do algoritmo

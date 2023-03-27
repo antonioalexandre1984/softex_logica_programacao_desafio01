@@ -1,0 +1,21 @@
+import datetime
+
+# Pedir nome completo do usuário
+nome_completo = input("Digite seu nome completo: ")
+
+# Loop para pedir o ano de nascimento
+while True:
+    ano_nascimento_str = input("Digite o ano do seu nascimento entre 1922 e 2021: ")
+    try:
+        ano_nascimento = int(ano_nascimento_str)
+        if ano_nascimento < 1922 or ano_nascimento > 2021:
+            raise ValueError
+        break
+    except ValueError:
+        print("Valor inválido! Tente novamente.")
+
+# Calcular idade atual
+idade = datetime.date.today().year - ano_nascimento
+
+# Mostrar nome e idade na tela
+print(f"Olá, {nome_completo}! Você tem {idade} anos.")

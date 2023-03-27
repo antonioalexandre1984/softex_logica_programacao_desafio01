@@ -1,0 +1,25 @@
+import pandas as pd
+
+# Lê o arquivo csv com as notas dos alunos
+df_notas = pd.read_csv("notas_alunos.csv")
+
+# Calcula a média das notas
+df_notas["media"] = (df_notas["nota_1"] + df_notas["nota_2"]) / 2
+
+# Cria uma coluna para armazenar a situação do aluno (APROVADO ou REPROVADO)
+df_notas["situacao"] = ["APROVADO" if media >= 7 and faltas <= 5 else "REPROVADO" for media, faltas in zip(df_notas["media"], df_notas["faltas"])]
+
+# Salva o novo dataframe com as informações de média e situação dos alunos
+df_notas.to_csv("alunos_situacao.csv", index=False)
+
+# Mostra o maior número de faltas
+max_faltas = df_notas["faltas"].max()
+print("Maior número de faltas:", max_faltas)
+
+# Calcula a média geral das notas
+media_geral = df_notas["media"].mean()
+print("Média geral das notas dos alunos:", media_geral)
+
+# Mostra a maior média
+maior_media = df_notas["media"].max()
+print("Maior média:", maior_media)

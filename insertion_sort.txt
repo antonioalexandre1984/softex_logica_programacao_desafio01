@@ -1,0 +1,29 @@
+algoritmo insertion_sort
+
+var
+  vetor : vetor[1..30] de inteiro
+  i, j, chave : inteiro
+
+inicio
+  // preenche o vetor com números ímpares
+  para i de 1 ate 30 faca
+    vetor[i] <- 2 * i - 1
+  fimpara
+  
+  // ordena o vetor utilizando o insertion sort
+  para i de 2 ate 30 faca
+    chave <- vetor[i]
+    j <- i - 1
+    enquanto j >= 1 e vetor[j] > chave faca
+      vetor[j+1] <- vetor[j]
+      j <- j - 1
+    fimenquanto
+    vetor[j+1] <- chave
+  fimpara
+  
+  // exibe o vetor ordenado em ordem crescente
+  para i de 1 ate 30 faca
+    escreva(vetor[i], " ")
+  fimpara
+  
+fimalgoritmo

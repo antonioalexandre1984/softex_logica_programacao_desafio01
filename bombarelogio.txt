@@ -1,0 +1,11 @@
+import time
+
+segundos = int(input("Digite o número de segundos para a bomba explodir: "))
+print("Iniciando contagem regressiva...")
+
+while segundos > 0:
+    print(segundos)
+    segundos -= 1
+    time.sleep(1)
+
+print("BUM!")

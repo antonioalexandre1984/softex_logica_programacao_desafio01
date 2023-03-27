@@ -1,0 +1,26 @@
+Algoritmo VerificaCategoriaHabilitacao
+// Declarando as variáveis
+Var
+  rodas, peso, pessoas: inteiro
+
+// Lendo os dados do veículo
+Escreva("Digite a quantidade de rodas do veículo: ")
+Leia(rodas)
+Escreva("Digite o peso bruto do veículo em kg: ")
+Leia(peso)
+Escreva("Digite a quantidade de pessoas no veículo: ")
+Leia(pessoas)
+
+// Verificando a categoria de habilitação
+Se (rodas = 2) OU (rodas = 3) Então
+  Escreva("Categoria A - Veículos com duas ou três rodas")
+Senão Se (rodas = 4) E (pessoas <= 8) E (peso <= 3500) Então
+  Escreva("Categoria B - Veículos com quatro rodas, que acomodam até oito pessoas e com peso até 3500 kg")
+Senão Se (rodas >= 4) E (peso > 3500) E (peso <= 6000) Então
+  Escreva("Categoria C - Veículos com quatro rodas ou mais e com peso entre 3500 e 6000 kg")
+Senão Se (rodas >= 4) E (pessoas > 8) Então
+  Escreva("Categoria D - Veículos com quatro rodas ou mais e que acomodam mais de oito pessoas")
+Senão
+  Escreva("Categoria E - Veículos com quatro rodas ou mais e com mais de 6000 kg")
+FimSe
+FimAlgoritmo

@@ -1,0 +1,61 @@
+algoritmo identificar_aprovados
+
+var
+    nome: vetor[25] de caractere
+    nota: vetor[25] de real
+    turma: vetor[25] de caractere
+    i, j: inteiro
+    total_aprovados, aprovados_turma: inteiro
+    maior_nota, maior_nota_turma: real
+    aluno_maior_nota, aluno_maior_nota_turma: caractere
+
+inicio
+    total_aprovados <- 0
+    maior_nota <- 0
+    aluno_maior_nota <- ""
+
+    // Loop para cada turma
+    para j de 1 ate 4 faca
+        // Inicializa variáveis de turma
+        maior_nota_turma <- 0
+        aluno_maior_nota_turma <- ""
+        aprovados_turma <- 0
+
+        // Loop para cada aluno da turma
+        para i de 1 ate 25 faca
+            escreva("Digite o nome do aluno ", i, " da turma ", j, ": ")
+            leia(nome[i])
+            escreva("Digite a nota do aluno ", i, " da turma ", j, ": ")
+            leia(nota[i])
+
+            // Verifica se o aluno foi aprovado
+            se nota[i] >= 7 entao
+                total_aprovados <- total_aprovados + 1
+                aprovados_turma <- aprovados_turma + 1
+            fimse
+
+            // Verifica se a nota é a maior da turma
+            se nota[i] > maior_nota_turma entao
+                maior_nota_turma <- nota[i]
+                aluno_maior_nota_turma <- nome[i]
+            fimse
+        fimpara
+
+        // Imprime as informações da turma
+        escreva("Turma ", j, ": ")
+        escreva(aprovados_turma, " aprovados. ")
+        escreva("Maior nota: ", maior_nota_turma, " (", aluno_maior_nota_turma, ")\n")
+
+        // Verifica se a nota é a maior de todas
+        se maior_nota_turma > maior_nota entao
+            maior_nota <- maior_nota_turma
+            aluno_maior_nota <- aluno_maior_nota_turma
+        fimse
+    fimpara
+
+    // Imprime a maior nota de todas
+    escreva("Maior nota de todas as turmas: ", maior_nota, " (", aluno_maior_nota, ")\n")
+
+    // Imprime o total de aprovados
+    escreva("Total de aprovados: ", total_aprovados)
+fim_algoritmo
