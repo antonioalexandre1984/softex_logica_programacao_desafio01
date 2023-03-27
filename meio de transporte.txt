@@ -1,0 +1,50 @@
+algoritmo descobrir_transporte
+
+var
+    resposta: caractere
+
+inicio
+    // Pergunta se é terrestre
+    escreva("É terrestre? ")
+    leia(resposta)
+    se resposta = "Sim" entao
+        // Pergunta se cabe apenas uma pessoa
+        escreva("Cabe apenas uma pessoa? ")
+        leia(resposta)
+        se resposta = "Sim" entao
+            // Pergunta se é pesado
+            escreva("É pesado? ")
+            leia(resposta)
+            se resposta = "Não" entao
+                // Pergunta se tem pedal
+                escreva("Tem pedal? ")
+                leia(resposta)
+                se resposta = "Sim" entao
+                    escreva("O transporte escolhido foi a bicicleta.")
+                senao
+                    escreva("Opção inválida.")
+                fimse
+            senao
+                // Pergunta se tem roda grande
+                escreva("Tem roda grande? ")
+                leia(resposta)
+                se resposta = "Sim" entao
+                    escreva("O transporte escolhido foi o trator.")
+                senao
+                    escreva("Opção inválida.")
+                fimse
+            fimse
+        senao
+            // Pergunta se tem guidão
+            escreva("Tem guidão? ")
+            leia(resposta)
+            se resposta = "Sim" entao
+                escreva("O transporte escolhido foi a moto.")
+            senao
+                escreva("Opção inválida.")
+            fimse
+        fimse
+    senao
+        escreva("Opção inválida.")
+    fimse
+fim_algoritmo
