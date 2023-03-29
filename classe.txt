@@ -1,0 +1,63 @@
+Algoritmo "Exemplo de Classe com Atributos e Métodos de Acesso e Modificação"
+
+// Definição da classe Pessoa
+Classe Pessoa
+    // Atributos privados da classe
+    Privado
+        nome: caractere
+        idade: inteiro
+
+    // Métodos de acesso e modificação para o atributo nome
+    Publico Metodo Caractere getNome()
+        Retorne nome
+    FimMetodo
+
+    Publico Metodo Sub setNome(novoNome: caractere)
+        nome <- novoNome
+    FimMetodo
+
+    // Métodos de acesso e modificação para o atributo idade
+    Publico Metodo Inteiro getIdade()
+        Retorne idade
+    FimMetodo
+
+    Publico Metodo Sub setIdade(novaIdade: inteiro)
+        idade <- novaIdade
+    FimMetodo
+
+    // Construtor da classe, que recebe o nome e a idade da pessoa
+    Publico Metodo Pessoa(nomePessoa: caractere, idadePessoa: inteiro)
+        nome <- nomePessoa
+        idade <- idadePessoa
+    FimMetodo
+
+FimClasse
+
+// Programa principal
+Inicio
+    // Criação de dois objetos da classe Pessoa, com diferentes valores de nome e idade
+    Pessoa pessoa1 <- Novo Pessoa("João", 30)
+    Pessoa pessoa2 <- Novo Pessoa("Maria", 25)
+
+    // Acesso aos atributos dos objetos criados, usando os métodos de acesso (get)
+    Escreva("Nome da pessoa 1: ", pessoa1.getNome())
+    Escreva("Idade da pessoa 1: ", pessoa1.getIdade())
+
+    Escreva("Nome da pessoa 2: ", pessoa2.getNome())
+    Escreva("Idade da pessoa 2: ", pessoa2.getIdade())
+
+    // Modificação dos atributos dos objetos criados, usando os métodos de modificação (set)
+    pessoa1.setNome("Pedro")
+    pessoa1.setIdade(35)
+
+    pessoa2.setNome("Ana")
+    pessoa2.setIdade(28)
+
+    // Acesso aos atributos dos objetos modificados, usando os métodos de acesso (get)
+    Escreva("Nome da pessoa 1 modificada: ", pessoa1.getNome())
+    Escreva("Idade da pessoa 1 modificada: ", pessoa1.getIdade())
+
+    Escreva("Nome da pessoa 2 modificada: ", pessoa2.getNome())
+    Escreva("Idade da pessoa 2 modificada: ", pessoa2.getIdade())
+
+FimAlgoritmo
